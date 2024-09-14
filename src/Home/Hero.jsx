@@ -1,5 +1,5 @@
 import myImage from '../images/myPic/pic1.jpg';
-import myImage1 from '../images/myPic/pic2.jpg';
+import bannerBg from '../assets/img/banner-bg.png';
 import CV from '../utils/CV.pdf';
 import caseStudy from '../utils/caseStudy.pdf';
 import 'animate.css';
@@ -7,8 +7,11 @@ import 'animate.css';
 function Hero() {
   return (
     <section
-      className="bg-[url('./banner-bg.png')] px-4 pb-[70px] pt-12 md:pt-[100px] lg:pt-[150px]"
+      className="px-4 pb-[70px] pt-12 md:pt-[100px] lg:pt-[150px]"
       id="home"
+      style={{
+        backgroundImage: `url(${bannerBg})`,
+      }}
     >
       <div className="container mx-auto flex flex-col items-center gap-10 py-12 text-white sm:flex-row sm:gap-4 lg:justify-between lg:gap-20 xl:max-w-screen-xl">
         <div className="flex flex-col items-center sm:items-start">
