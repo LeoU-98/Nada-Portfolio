@@ -1,6 +1,6 @@
 function DesktopNav() {
   return (
-    <ul className="hidden items-center gap-4 sm:flex md:gap-8">
+    <ul className="hidden w-full items-center gap-4 sm:flex md:gap-8">
       <li>
         <a href="#home" className="menu-item relative pb-1">
           Home
@@ -11,13 +11,12 @@ function DesktopNav() {
           Skills
         </a>
       </li>
-
       <li>
         <a href="#experience" className="menu-item relative pb-1">
           Work Experience
         </a>
       </li>
-      <li className="contact-me-hover cursor-pointer rounded-lg bg-black px-10 py-2 text-center">
+      <li className="contact-me-hover ml-auto cursor-pointer rounded-lg bg-black px-10 py-2 text-center">
         <a href="#contact">Contact Me</a>
       </li>
     </ul>

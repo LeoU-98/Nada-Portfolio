@@ -1,4 +1,4 @@
-import myImage from '../images/myPic/pic1.jpg';
+import myImage from '../images/myPic/pic3.jpg';
 import bannerBg from '../assets/img/banner-bg.png';
 import CV from '../utils/CV.pdf';
 import caseStudy from '../utils/caseStudy.pdf';
