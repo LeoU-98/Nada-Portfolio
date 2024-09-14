@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 115%;
+  }
+}
+
+@layer components {
+  .menu-item::before {
+    content: '';
+    width: 1%;
+    height: 0.13rem;
+    background: linear-gradient(90deg, #a993ee 0%, #7e61e7 100%);
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: -3px;
+    opacity: 0;
+    transform: translateX(-1.5rem);
+    transition: all 0.3s ease;
+  }
+
+  .menu-item:hover::before {
+    width: 100%;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* ////////////////////////////////////////////////// */
+
+.contact-me-hover {
+  color: #fff;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #6d28d9 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(45deg, #6d28d9 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 600ms ease-in-out;
+  transition: background 600ms ease-in-out;
+}
+.contact-me-hover:hover {
+  background-position: 0;
+}
+
+/* ////////////////////////// */
+
+.contact-bg-gradient {
+  background-image: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+}
+
+/*////////////////////////*/
+/*   scroll bar styling   */
+/*////////////////////////*/
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(#7c3aed, #4c1d95);
+  border-radius: 4px;
+  transition-duration: 0.5s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(#aa367c, #4a2fbd);
+}
+
+/* //////////////////////////// */
